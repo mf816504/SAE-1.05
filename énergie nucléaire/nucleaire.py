@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt  #Import du module
 annees = [] #creation de la liste qui va servir à stocker les années
 productions = [] #creation de la liste qui va servir à stocker la production totale
 
-with open("nucleaire.csv", newline='', encoding="utf-8") as fichier: : # Ouverture du fichier csv pour pouvoir le lire
+with open("nucleaire.csv", newline='', encoding="utf-8") as fichier:  # Ouverture du fichier csv pour pouvoir le lire
     lecteur = csv.reader(fichier, delimiter=';') # Déclaration du délimiteur
     next(lecteur) # Saute la première ligne pour la bonne lecture des données
 
@@ -24,4 +24,5 @@ plt.title("Évolution de la production d'électricité nucléaire") # Ajoute un 
 plt.xlabel("Années") #Nom des axes
 plt.ylabel("Production annuelle en TWh") #Nom des axes
 plt.show() # Affiche le graphique 
+
 
